@@ -28,7 +28,9 @@ public class Main {
         System.out.println("Сумма найденная циклом do while:"+sum_do_while+"  Сумма найденная циклом for:"+sum_for+"    Сумма найденная циклом while: "+ sum_while);
         ///////////////task4////////////////
 
-
+        for(String out : args){
+            System.out.println(out);
+        }
 
         ///////////////Task5////////////////
         System.out.println("Первые 10 элементов гармонического ряда");
