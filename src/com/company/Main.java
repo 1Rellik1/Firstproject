@@ -3,6 +3,13 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
+    public static int factorial(int number){
+        int fact=1;
+        for (int i=1;i<=number;i++){
+        fact=fact*i;
+    }
+        return fact;
+    }
 
     public static void main(String[] args) {
         ////////////Task3/////////////
@@ -63,8 +70,14 @@ public class Main {
         }
         System.out.println();
         System.out.print("Отсартированный массив:  ");
-        for (int i=0;i<5;i++){
-            System.out.print(mas[i] +"  ");
+        for (int i=0;i<5;i++) {
+            System.out.print(mas[i] + "  ");
         }
+        /////////////////Task7////////////
+        System.out.println("Введите число");
+        int number;
+        number=scan.nextInt();
+        System.out.println(factorial(number));
     }
+
 }
