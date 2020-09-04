@@ -11,7 +11,7 @@ public class Main {
         Scanner scan= new Scanner(System.in);
         int[] mas= new int[5];
         for (int i=0;i<5;i++){
-            mas[i]= scan.nextInt();
+            mas[i]= (int)(Math.random()*100);
         }
         for (int i=0;i < 5;i++){
             sum_for=sum_for+mas[i];
@@ -25,7 +25,7 @@ public class Main {
             sum_do_while=mas[count_do_while]+sum_do_while;
             count_do_while++;
         }while(count_do_while!=5);
-        System.out.println(sum_do_while+"  "+sum_for+"  "+ sum_while);
+        System.out.println("Сумма найденная циклом do while:"+sum_do_while+"  Сумма найденная циклом for:"+sum_for+"    Сумма найденная циклом while: "+ sum_while);
 
         ///////////////Task4////////////////
     }
