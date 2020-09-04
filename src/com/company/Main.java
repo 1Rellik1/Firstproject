@@ -28,8 +28,9 @@ public class Main {
         System.out.println("Сумма найденная циклом do while:"+sum_do_while+"  Сумма найденная циклом for:"+sum_for+"    Сумма найденная циклом while: "+ sum_while);
         ///////////////task4////////////////
 
-        for(String out : args){
-            System.out.println(out);
+        System.out.println();
+        for(String out1 : args){
+            System.out.println(out1);
         }
 
         ///////////////Task5////////////////
