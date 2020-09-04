@@ -26,7 +26,14 @@ public class Main {
             count_do_while++;
         }while(count_do_while!=5);
         System.out.println("Сумма найденная циклом do while:"+sum_do_while+"  Сумма найденная циклом for:"+sum_for+"    Сумма найденная циклом while: "+ sum_while);
+        ///////////////task4////////////////
 
-        ///////////////Task4////////////////
+        ///////////////Task5////////////////
+        System.out.println("Первые 10 элементов гармонического ряда");
+        for(int i=1;i<=10;i++){
+            double res= 1/(double) i;
+            String formattedDouble = String.format("%.2f", res);
+            System.out.print(formattedDouble + " ");
+        }
     }
 }
