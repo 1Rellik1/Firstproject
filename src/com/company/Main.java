@@ -28,12 +28,40 @@ public class Main {
         System.out.println("Сумма найденная циклом do while:"+sum_do_while+"  Сумма найденная циклом for:"+sum_for+"    Сумма найденная циклом while: "+ sum_while);
         ///////////////task4////////////////
 
+
+
         ///////////////Task5////////////////
         System.out.println("Первые 10 элементов гармонического ряда");
         for(int i=1;i<=10;i++){
             double res= 1/(double) i;
             String formattedDouble = String.format("%.2f", res);
             System.out.print(formattedDouble + " ");
+        }
+
+
+        ////////////Task6////////////
+
+        for (int i=0;i<5;i++){
+            mas[i]= (int)(Math.random()*100);
+        }
+        System.out.println();
+        System.out.print("Рандомный массив:  ");
+        for (int i=0;i<5;i++){
+            System.out.print(mas[i] +"  ");
+        }
+        for(int i = 4 ; i > 0 ; i--){
+            for(int j = 0 ; j < i ; j++) {
+                if (mas[j] > mas[j + 1]) {
+                    int tmp = mas[j];
+                    mas[j] = mas[j + 1];
+                    mas[j + 1] = tmp;
+                }
+            }
+        }
+        System.out.println();
+        System.out.print("Отсартированный массив:  ");
+        for (int i=0;i<5;i++){
+            System.out.print(mas[i] +"  ");
         }
     }
 }
